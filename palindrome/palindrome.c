@@ -6,7 +6,7 @@
 /*   By: qbarron <qbarron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 10:57:57 by qbarron           #+#    #+#             */
-/*   Updated: 2024/09/10 12:39:39 by qbarron          ###   ########.fr       */
+/*   Updated: 2024/09/10 19:36:03 by qbarron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ bool is_palindrome(int x)
 	{
 		if(str[i] != str[j])
 		{
-			free(str);
+			free(str);	
 			return(false);
 		}
 		i++;
