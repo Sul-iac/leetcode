@@ -6,7 +6,7 @@
 /*   By: qbarron <qbarron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/06 16:29:38 by qbarron           #+#    #+#             */
-/*   Updated: 2024/09/11 19:40:11 by qbarron          ###   ########.fr       */
+/*   Updated: 2024/09/11 19:53:51 by qbarron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,6 @@ ListNode *create_node(int data)
 	node->next = NULL;
 
 	return(node);
-}
-
-ListNode *point_to_head(ListNode *head, int data)
-{
-	ListNode *new_node = create_node(data);
-	new_node->next = head;
-	head = new_node;
-	return(head);
 }
 
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) 
@@ -61,9 +53,6 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
 		if(l2 != NULL) l2 = l2->next;
 
 	}
-	//printf("\nliste finale: ");
-	//print_list(res);
-	//printf("\n");
 	return (res);
 }
 
